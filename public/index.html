@@ -8,7 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/menu.js"></script>
+
 </head>
 <body>
   <header class="site-header site-header--home">
@@ -24,6 +27,27 @@
           <li><a href="https://app.calicomedia.co/login">Log in</a></li>
           <li><a class="btn" href="contact.html">Book a demo</a></li>
         </ul>
+
+        <button class="menu__btn" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+            <div class="menu__overlay">
+                <div class="menu__close" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></div>
+                <div class="menu__link--list">
+                    <a href="features.html" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">Features</a></li>
+                    <a href="pricing.html" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">Pricing</a></li>
+                    <a href="#playbook" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">Growth Playbook</a></li>
+                    <a href="about.html" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">About</a></li>
+                    <a href="contact.html" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">Contact</a></li>
+                    <a href="https://app.calicomedia.co/login" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">Log In</a></li>
+                    <a href="contact.html" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">Book a Demo</a></li>
+                </div>
+            </div>
       </nav>
     </div>
   </header>
