@@ -28,26 +28,18 @@
           <li><a class="btn" href="contact.html">Book a demo</a></li>
         </ul>
 
-        <button class="menu__btn" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
-            <div class="menu__overlay">
-                <div class="menu__close" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></div>
-                <div class="menu__link--list">
-                    <a href="features.html" class="link__hover-effect">
-                        <li class="nav__link" onclick="closeMenu()">Features</a></li>
-                    <a href="pricing.html" class="link__hover-effect">
-                        <li class="nav__link" onclick="closeMenu()">Pricing</a></li>
-                    <a href="#playbook" class="link__hover-effect">
-                        <li class="nav__link" onclick="closeMenu()">Growth Playbook</a></li>
-                    <a href="about.html" class="link__hover-effect">
-                        <li class="nav__link" onclick="closeMenu()">About</a></li>
-                    <a href="contact.html" class="link__hover-effect">
-                        <li class="nav__link" onclick="closeMenu()">Contact</a></li>
-                    <a href="https://app.calicomedia.co/login" class="link__hover-effect">
-                        <li class="nav__link" onclick="closeMenu()">Log In</a></li>
-                    <a href="contact.html" class="link__hover-effect">
-                        <li class="nav__link" onclick="closeMenu()">Book a Demo</a></li>
-                </div>
-            </div>
+        <button class="menu__btn" onclick="openMenu()"><i class="fa-solid fa-bars" alt="Burger Menu"></i></button>
+          <div class="menu__overlay">
+            <button class="menu__close" onclick="closeMenu()"><i class="fa-solid fa-xmark" alt="Close Button"></i></button>
+              <ul class="menu__link--list">
+                <li onclick="closeMenu()"><a class="nav__link" href="features.html">Features</a></li>
+                <li onclick="closeMenu()"><a class="nav__link" href="pricing.html">Pricing</a></li>
+                <li onclick="closeMenu()"><a class="nav__link" href="#playbook">Growth Playbook</a></li>
+                <li onclick="closeMenu()"><a class="nav__link" href="about.html">About</a></li>
+                <li onclick="closeMenu()"><a class="nav__link" href="contact.html">Contact</a></li>
+                <li onclick="closeMenu()"><a class="nav__link" href="https://app.calicomedia.co/login">Log In</a></li>
+              </ul>
+          </div>
       </nav>
     </div>
   </header>

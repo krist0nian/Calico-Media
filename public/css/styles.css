@@ -57,8 +57,8 @@ p {
 }
 
 a {
-  color: var(--white);
-  text-decoration: none;
+  color: var(--teal);
+  
 }
 
 img {
@@ -181,6 +181,11 @@ img {
 .nav-links a:hover,
 .nav-links a[aria-current='page'] {
   color: var(--orange-dark);
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
 }
 
 .site-header--home {
