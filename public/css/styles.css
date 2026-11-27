@@ -58,6 +58,7 @@ p {
 
 a {
   color: var(--teal);
+  
 }
 
 img {
@@ -182,6 +183,11 @@ img {
   color: var(--orange-dark);
 }
 
+.nav__link {
+  color: white;
+  text-decoration: none;
+}
+
 .site-header--home {
   background: var(--ink);
   border-bottom: 0;
@@ -228,6 +234,59 @@ img {
   padding: 10px 20px;
 }
 
+.menu__btn {
+    background-color: transparent;
+    font-size: 34px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__overlay {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transform: translate(100%);
+}
+
+.menu--open .menu__overlay {
+    opacity: 1;
+    visibility: visible;
+    z-index: 50;
+    transform: translate(0);
+}
+
+.menu__close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
+    font-size: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu__link--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    gap: 10px;
+}
+
 /* Home hero */
 
 .hero {
@@ -257,7 +316,7 @@ img {
   margin-top: 32px;
 }
 
-.hero-media {
+.hero-media img {
   width: 600px;
   flex-shrink: 0;
 }
@@ -746,6 +805,22 @@ img {
   padding-top: 24px;
 }
 
+@media (max-width: 1100px) {
+  .hero-inner {
+  flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 1000px) {
+  .site-header--home .nav-links {
+    display: none;
+  }
+
+  .menu__btn {
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 40px;
@@ -771,6 +846,10 @@ img {
 
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .playbook-grid {
+    grid-template-columns: 1fr;
   }
 
   .contact-layout {
